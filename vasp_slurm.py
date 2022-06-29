@@ -55,7 +55,7 @@ def main():
     slurm_remote_executor = <your slurm set up>
     VASP_Calculation = Step(
         "VASP-Calculation",
-        PythonOPTemplate(VASPCal, image="dptechnology/dflow"),
+        PythonOPTemplate(VASPCal, image="your image"),
         artifacts={"input": upload_artifact(["./VASP_test"])},  
         executor=slurm_remote_executor,
     )
