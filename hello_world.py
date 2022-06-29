@@ -49,7 +49,7 @@ def main():
 
     print_hello = Step(
         "hello-world-print",
-        PythonOPTemplate(PrintHello, image="dptechnology/dflow"),
+        PythonOPTemplate(PrintHello, image="your image"),
         parameters={"repeat_numb": 10},
         executor=slurm_remote_executor,
     )
